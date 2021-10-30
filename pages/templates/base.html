@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Литература</title>
+</head>
+<body>
+<header><h1><a href="{% url 'index' %}">Список статей</a> </h1><h1><a href="{% url 'about' %}">Описание</a> </h1></header>
+<div>{% block content %}{% endblock content %}</div>
+</body>
+</html>
