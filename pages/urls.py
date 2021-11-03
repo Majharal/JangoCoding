@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import ListShowItems, AboutPage
+from .views import ListShowItems, AboutPage, CreatePost
 
 #from pages.views import homePageView, HomePageView, AboutPageView
 
@@ -24,4 +24,5 @@ urlpatterns = [
 #    path('', homePageView, name = 'home'),
 #    path('index', HomePageView.as_view(), name = 'index'),
     path('about', AboutPage.as_view(), name = 'about'),
+    path('new/', CreatePost.as_view(), name = 'items')
 ]
